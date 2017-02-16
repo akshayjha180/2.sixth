@@ -1,0 +1,74 @@
+1) Write a program to accepts two numbers from stdin and find all the odd as well as even
+numbers present in between them.
+
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public class acad {
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();            //value of first integer from user
+int b=sc.nextInt();            //value of second integer from user
+ArrayList<Integer> odd=new ArrayList<Integer>();
+ArrayList<Integer> even=new ArrayList<Integer>();
+for(int i=a;i<=b;i++){
+if(i%2==0)
+even.add(i);               //Storing even numbers in arraylist
+else
+odd.add(i);                //Storing odd numbers in arraylist
+}System.out.println("Odd numbers are:\n");
+for(int i:odd)
+System.out.print(i+" ");
+System.out.println("\nEven numbers are:\n");
+for(int i:even)
+System.out.print(i+" ");
+}
+}
+
+2) Joe is scared to go to school. When her dad asked the reason, joe said she is unable to
+complete the task given by her teacher. The task was to find the “first 10 multiples” of the
+number entered from stdin.
+
+import java.util.Scanner;
+
+public class acad {
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();                                     //accepting the number
+System.out.println("Input: "+n);
+System.out.println("O/p:");
+for(int i=1;i<=10;i++){
+System.out.println(n+" x "+i+" = "+(n*i));            //displaying table of given number
+}
+}
+}
+
+3) Write a program consisting method sum() and demonstrate the concept of method
+overloading using this method.
+
+import java.util.Scanner;
+
+
+public class acad {
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();       //Accepting 3 numbers from the user
+int b=sc.nextInt();
+int c=sc.nextInt();
+sum(a,b);                 //method with 2 parameters
+sum(a,b,c);               //method with 3 parameters
+}
+  // method overloading
+public static void sum(int a,int b){
+System.out.println("Sum of first 2 numbers is:"+(a+b));
+}
+public static void sum(int a,int b,int c){
+System.out.println("Sum of all 3 numbers is:"+(a+b+c));
+}
+}
+
+
+
+
